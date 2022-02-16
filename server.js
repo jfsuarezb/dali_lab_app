@@ -4,6 +4,7 @@ const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWI
 const app = require('express')();
 const port = 8000;
 const urlEncodedParser = require('body-parser').urlencoded({extended:false});
+let getMessageToSend = require('./getMessageToSend.js').getMessageToSend;
 
 // This is basic ping functionality to check the server's status 
 app.get('/', (_, res) => {
