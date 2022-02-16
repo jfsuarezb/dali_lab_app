@@ -23,6 +23,10 @@ exports.getMessageToSend = async (req) => {
 
 	try {
 
+		// This block of code searches for coffee shops and
+		// restaurants nearby. It aggregates five random 
+		// coffee shops and restaurants
+
 		let res = await axios.get(yelpApiReqURL + `?location=${cityName}`, {
 			headers: {
 				'Authorization': `Bearer ${process.env.YELP_API_KEY}`
