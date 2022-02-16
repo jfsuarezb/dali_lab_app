@@ -1,0 +1,23 @@
+{
+  "name": "dali_lab_app",
+  "version": "1.0.0",
+  "description": "This is a project for The DALI lab",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfsuarezb/dali_lab_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfsuarezb/dali_lab_app/issues"
+  },
+  "homepage": "https://github.com/jfsuarezb/dali_lab_app#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
